@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:orientation="vertical"
+    android:elevation="23dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="50dp"
+        android:text="Login"
+        android:textSize="50dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="271dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/mail"
+            android:text="Singn IN E-mail"
+            android:textAlignment="center"
+            android:textSize="40dp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="235dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:drawableRight="@drawable/email"
+            android:text="SINGN IN GOOGLE"
+            android:textAlignment="center"
+            android:textSize="40dp" />
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="79dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="116dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:drawableRight="@drawable/facebook"
+            android:text="SINGN IN FACEBOOK"
+            android:textAlignment="center"
+            android:textSize="35dp" />
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="152dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="108dp"
+            android:text="New Here?"
+            android:textSize="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_Create"
+            android:layout_width="229dp"
+            android:layout_height="64dp"
+            android:text="Create an Account"
+            android:textSize="25dp"
+            android:textAlignment="gravity"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.652" />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
