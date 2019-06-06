@@ -7,6 +7,7 @@
     android:background="@color/orange"
     android:orientation="vertical"
     android:elevation="23dp"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
 
@@ -21,45 +22,49 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="271dp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/shap"
             android:drawableRight="@drawable/mail"
             android:text="Singn IN E-mail"
             android:textAlignment="center"
-            android:textSize="40dp" />
-
-        <android.support.v4.widget.Space
-            android:layout_width="match_parent"
-            android:layout_height="235dp" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="91dp"
-            android:drawableRight="@drawable/email"
-            android:text="SINGN IN GOOGLE"
-            android:textAlignment="center"
-            android:textSize="40dp" />
+            android:textSize="25dp" />
     </android.support.v7.widget.CardView>
 
 
-    <android.support.v4.widget.Space
-        android:layout_width="match_parent"
-        android:layout_height="79dp" />
-
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="116dp">
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content">
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="106dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shap"
+            android:drawableRight="@drawable/email"
+            android:text="SINGN IN GOOGLE"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shap"
             android:drawableRight="@drawable/facebook"
             android:text="SINGN IN FACEBOOK"
             android:textAlignment="center"
-            android:textSize="35dp" />
+            android:textSize="25dp" />
     </android.support.v7.widget.CardView>
     <LinearLayout
         android:layout_width="match_parent"
