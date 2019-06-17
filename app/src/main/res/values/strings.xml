@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MyAppActivity</string>
+    <string name="title_activity_home_">Home_Activity</string>
+    <string name="activity_guest">guest</string>
+    <string name="activity_view">view</string>
+    <string name="activity_emergency">Emergency</string>
+    <string name="action_sign_in">action_sign_in</string>
+    <string name="prompt_email">prompt_email</string>
+    <string name="prompt_password">prompt_password</string>
+    <string name="action_sign_in_short">action_sign_in_short</string>
 </resources>

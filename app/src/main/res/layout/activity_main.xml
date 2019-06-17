@@ -11,92 +11,106 @@
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/textView"
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="50dp"
-        android:text="Login"
-        android:textSize="50dp" />
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="90dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="90dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:textSize="24dp"
+            android:background="@drawable/shape1"
+            android:textColorHint="@color/orange"
+            android:elegantTextHeight="true"
+            android:elevation="20dp"
+            android:textColorHighlight="@color/orange"
+            android:layout_gravity="center"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true"/>
+
+    </android.support.v7.widget.CardView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp">
+        android:layout_height="150dp"
+        android:background="@drawable/shape2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="90dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="90dp"
+        >
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/shap"
-            android:drawableRight="@drawable/mail"
-            android:text="Singn IN E-mail"
-            android:textAlignment="center"
-            android:textSize="25dp" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:background="@drawable/shape1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:textSize="24dp"
+            android:elegantTextHeight="true"
+            android:elevation="20dp"
+            android:textColorHint="@color/orange"
+            android:textColorHighlight="@color/orange"
+            android:layout_gravity="center"
+            android:hint="@string/prompt_password"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"/>
+
     </android.support.v7.widget.CardView>
-
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_marginTop="12dp"
-        android:layout_height="wrap_content">
+        android:layout_height="150dp"
+        android:background="@drawable/shape2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="90dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="90dp">
+
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/shap"
-            android:drawableRight="@drawable/email"
-            android:text="SINGN IN GOOGLE"
-            android:textAlignment="center"
-            android:textSize="25dp" />
+            android:id="@+id/login"
+            android:background="@drawable/shape1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:elegantTextHeight="true"
+            android:elevation="20dp"
+            android:textColor="@color/orange"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:text="@string/action_sign_in"
+            />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="@color/orange"
+            android:outlineSpotShadowColor="@color/orange"
+            android:visibility="visible" />
+
+
     </android.support.v7.widget.CardView>
-
-
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp">
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/shap"
-            android:drawableRight="@drawable/facebook"
-            android:text="SINGN IN FACEBOOK"
-            android:textAlignment="center"
-            android:textSize="25dp" />
-    </android.support.v7.widget.CardView>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="152dp"
-            android:layout_height="57dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="108dp"
-            android:text="New Here?"
-            android:textSize="28dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/txt_Create"
-            android:layout_width="229dp"
-            android:layout_height="64dp"
-            android:text="Create an Account"
-            android:textSize="25dp"
-            android:textAlignment="gravity"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.652" />
-    </LinearLayout>
-
-
-
-
 
 
 </LinearLayout>
+

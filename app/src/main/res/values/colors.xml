@@ -20,11 +20,14 @@
     <color name="red2">#e65c00</color>
 
     <color name="darkBlue">#1a2980</color>
-    <color name="darkpeach">#26d0ce</color>
+
     <color name="black">#EE222424</color>
 
     <color name="blue1">#78ffd6</color>
     <color name="peach1">#a8ff78</color>
+
+    <color name="darkpeach">#26d0ce</color>
+    <color name="darkpeach2">#4B26D0CE</color>
 
 
 </resources>

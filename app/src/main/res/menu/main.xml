@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/development"
+        android:title="Development" />
+
+    <item
+        android:id="@+id/design"
+        android:title="Design" />
+
+    <item
+        android:id="@+id/markting"
+        android:title="Marking" />
+
+
+</menu>
