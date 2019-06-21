@@ -20,20 +20,18 @@
         app:cardCornerRadius="15dp"
         app:cardElevation="90dp">
 
-        <EditText
-            android:id="@+id/username"
+        <Button
+            android:id="@+id/gm"
             android:layout_width="250dp"
+            android:background="@drawable/shape1"
             android:layout_height="wrap_content"
             android:textColor="@color/orange"
             android:textSize="24dp"
-            android:background="@drawable/shape1"
-            android:textColorHint="@color/orange"
-            android:elegantTextHeight="true"
             android:elevation="20dp"
-            android:textColorHighlight="@color/orange"
+            android:textColorHint="@color/orange"
             android:layout_gravity="center"
-            android:hint="@string/prompt_email"
-            android:inputType="textEmailAddress"
+            android:text="Sing In E-mail"
+            android:drawableLeft="@drawable/gmail"
             android:selectAllOnFocus="true"/>
 
     </android.support.v7.widget.CardView>
@@ -52,22 +50,18 @@
         app:cardElevation="90dp"
         >
 
-        <EditText
-            android:id="@+id/password"
+        <Button
+            android:id="@+id/fb"
             android:layout_width="250dp"
             android:background="@drawable/shape1"
             android:layout_height="wrap_content"
             android:textColor="@color/orange"
             android:textSize="24dp"
-            android:elegantTextHeight="true"
             android:elevation="20dp"
             android:textColorHint="@color/orange"
-            android:textColorHighlight="@color/orange"
             android:layout_gravity="center"
-            android:hint="@string/prompt_password"
-            android:imeActionLabel="@string/action_sign_in_short"
-            android:imeOptions="actionDone"
-            android:inputType="textPassword"
+            android:text="Sing In Facebook"
+            android:drawableLeft="@drawable/facebook"
             android:selectAllOnFocus="true"/>
 
     </android.support.v7.widget.CardView>
@@ -87,26 +81,19 @@
 
 
         <Button
-            android:id="@+id/login"
+            android:id="@+id/gb"
+            android:layout_width="wrap_content"
             android:background="@drawable/shape1"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:elegantTextHeight="true"
-            android:elevation="20dp"
             android:textColor="@color/orange"
+            android:textSize="24dp"
+            android:elevation="20dp"
+            android:textColorHint="@color/orange"
             android:layout_gravity="center"
-            android:enabled="false"
-            android:text="@string/action_sign_in"
-            />
+            android:text="Sing In Google"
+            android:drawableLeft="@drawable/email"
+            android:selectAllOnFocus="true"/>
 
-        <ProgressBar
-            android:id="@+id/loading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:outlineAmbientShadowColor="@color/orange"
-            android:outlineSpotShadowColor="@color/orange"
-            android:visibility="visible" />
 
 
     </android.support.v7.widget.CardView>

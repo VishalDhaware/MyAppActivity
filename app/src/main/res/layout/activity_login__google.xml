@@ -20,29 +20,42 @@
         android:textStyle="bold" />
 
     <RelativeLayout
-        android:layout_width="346dp"
-        android:layout_height="365dp"
+        android:layout_width="367dp"
+        android:layout_height="494dp"
         android:layout_below="@+id/login_title"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="41dp"
         android:layout_marginRight="30dp"
         android:background="#fff"
         android:elevation="4dp"
         android:orientation="vertical"
         android:padding="20dp">
 
+        <ImageButton
+            android:id="@+id/user_profile_photo"
+            android:layout_width="102dp"
+            android:layout_height="62dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="115dp"
+            android:layout_marginEnd="114dp"
+            android:background="@drawable/gmail"
+            android:elevation="4dp" />
+
+
         <LinearLayout
-            android:layout_width="316dp"
-            android:layout_height="wrap_content"
+            android:layout_width="315dp"
+            android:layout_height="455dp"
             android:orientation="vertical"
             android:paddingTop="30dp">
 
             <android.support.design.widget.TextInputLayout
+                android:id="@+id/userName_lg"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp">
 
                 <EditText
-                    android:id="@+id/uname"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:drawableTint="#FF4081"
@@ -52,11 +65,11 @@
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
+                android:id="@+id/userPassword_lg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/u_password"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -75,7 +88,7 @@
 
 
             <Button
-                android:id="@+id/btn_sing_in"
+                android:id="@+id/btn_sing_lg"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="22dp"
@@ -85,28 +98,30 @@
                 android:textColor="#fff"
                 android:textSize="18sp" />
 
-            <Button
-                android:id="@+id/btn_register_here"
-                android:layout_width="fill_parent"
-                android:layout_height="37dp"
-                android:layout_margin="22dp"
-                android:background="#d67601"
-                android:text="Ragister here"
-                android:textAllCaps="false"
-                android:textColor="#fff"
-                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99dp">
+
+                <TextView
+                    android:id="@+id/textview_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="Already_Login"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/textview_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingLeft="10dp"
+                    android:text="Registartion"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
         </LinearLayout>
     </RelativeLayout>
-
-
-    <ImageButton
-        android:id="@+id/user_profile_photo"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_below="@+id/login_title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp"
-        android:background="@drawable/google"
-        android:elevation="4dp" />
 
 </RelativeLayout>

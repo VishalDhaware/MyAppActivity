@@ -12,9 +12,9 @@ public class Login_Email extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login__email);
-        uname=findViewById(R.id.uname);
-        upass=findViewById(R.id.u_password);
-       Intent i=new Intent(getApplicationContext(),Home_Activity.class);
+        uname=findViewById(R.id.useName);
+        upass=findViewById(R.id.userPassword);
+       Intent i=new Intent(Login_Email.this,Home_Activity.class);
         startActivity(i);
     }
 }

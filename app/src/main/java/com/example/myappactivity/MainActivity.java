@@ -9,22 +9,22 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button email,google,facebook;
-    TextView txtcreate;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        email=findViewById(R.id.btn_email_1);
-        google=findViewById(R.id.btn_google_1);
-        facebook=findViewById(R.id.btn_facebook_1);
-        txtcreate=findViewById(R.id.txt_Create);
+        email=findViewById(R.id.gm);
+        google=findViewById(R.id.gb);
+        facebook=findViewById(R.id.fb);
+
         email.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,Login_Email.class);
-                startActivity(intent);
+                Intent intent1=new Intent(MainActivity.this,Login_Email.class);
+                startActivity(intent1);
             }
         });
         google.setOnClickListener(new View.OnClickListener() {
@@ -41,12 +41,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        txtcreate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,CreateActivity.class);
-                startActivity(intent);
-            }
-        });
+
     }
 }
